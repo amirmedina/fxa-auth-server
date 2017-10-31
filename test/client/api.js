@@ -142,7 +142,8 @@ module.exports = config => {
         reason: opts.reason || undefined,
         device: opts.device || undefined,
         metricsContext: opts.metricsContext || undefined,
-        originalLoginEmail: opts.originalLoginEmail || undefined
+        originalLoginEmail: opts.originalLoginEmail || undefined,
+        verificationMethod: opts.verificationMethod || undefined
       },
       {
         'accept-language': opts.lang
