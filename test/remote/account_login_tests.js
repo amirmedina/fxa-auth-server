@@ -16,6 +16,8 @@ describe('remote account login', () => {
 
   before(function() {
     this.timeout(15000)
+    config.securityHistory.ipProfiling.allowedRecency = 0
+    config.signinConfirmation.skipForNewAccounts.enabled = false
     return TestServer.start(config)
       .then(s => {
         server = s
